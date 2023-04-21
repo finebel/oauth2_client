@@ -17,7 +17,7 @@ dependencies:
     git:
       url: https://github.com/finebel/http
       path: pkgs/http
-      ref: master
+      ref: fe743dcd08a34569876cdc36d6b70628912e7c8a
 
   meta: ^1.8.0
   random_string: ^2.3.1
