@@ -5,7 +5,7 @@ version: 3.2.1
 homepage: https://github.com/teranetsrl/oauth2_client
 repository: https://github.com/teranetsrl/oauth2_client
 environment:
-  sdk: '>=2.14.0 <3.0.0'
+  sdk: ">=2.14.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -13,7 +13,12 @@ dependencies:
   crypto: ^3.0.2
   flutter_secure_storage: ^8.0.0
   flutter_web_auth_2: ^2.1.1
-  http: ^0.13.5
+  http:
+    git:
+      url: https://github.com/finebel/http
+      path: pkgs/http
+      ref: master
+
   meta: ^1.8.0
   random_string: ^2.3.1
 
@@ -26,7 +31,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter: null
-
 # To add assets to your package, add an assets section, like this:
 # assets:
 #  - images/a_dot_burr.jpeg
