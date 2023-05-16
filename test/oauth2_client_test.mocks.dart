@@ -7,7 +7,7 @@ import 'dart:async' as _i4;
 import 'dart:convert' as _i5;
 import 'dart:typed_data' as _i6;
 
-import 'package:http/http.dart' as _i2;
+import 'package:http_forked/http.dart' as _i2;
 import 'package:mockito/mockito.dart' as _i1;
 import 'package:oauth2_client/src/base_web_auth.dart' as _i3;
 

@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:http/http.dart' as http;
+import 'package:http_forked/http.dart' as http;
 import 'package:oauth2_client/access_token_response.dart';
 
 void main() {

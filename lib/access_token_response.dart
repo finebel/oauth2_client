@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:http/http.dart' as http;
+import 'package:http_forked/http.dart' as http;
 import 'package:oauth2_client/oauth2_response.dart';
 
 /// Represents the response to an Access Token Request.
