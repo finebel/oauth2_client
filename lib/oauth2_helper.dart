@@ -1,5 +1,6 @@
 import 'package:http_forked/http.dart' as http;
 import 'package:oauth2_client/access_token_response.dart';
+import 'package:oauth2_client/interfaces.dart';
 import 'package:oauth2_client/oauth2_client.dart';
 import 'package:oauth2_client/oauth2_exception.dart';
 import 'package:oauth2_client/oauth2_response.dart';
@@ -45,13 +46,15 @@ class OAuth2Helper {
       this.enablePKCE = true,
       this.enableState = true,
       tokenStorage,
+      BaseStorage? tokenBaseStorage,
       this.afterAuthorizationCodeCb,
       this.authCodeParams,
       this.accessTokenParams,
       this.accessTokenHeaders,
       this.webAuthClient,
       this.webAuthOpts}) {
-    this.tokenStorage = tokenStorage ?? TokenStorage(client.tokenUrl);
+    this.tokenStorage = tokenStorage ??
+        TokenStorage(client.tokenUrl, storage: tokenBaseStorage);
   }
 
   /// Returns a previously required token, if any, or requires a new one.

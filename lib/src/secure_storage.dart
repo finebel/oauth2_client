@@ -14,7 +14,6 @@ class SecureStorage implements BaseStorage {
   Future<String?> read(String key) async {
     const options = IOSOptions(
       accessibility: KeychainAccessibility.first_unlock,
-      groupId: "group.studipadawan",
     );
     return await storage.read(key: key, iOptions: options);
   }
@@ -23,7 +22,6 @@ class SecureStorage implements BaseStorage {
   Future<void> write(String key, String value) async {
     const options = IOSOptions(
       accessibility: KeychainAccessibility.first_unlock,
-      groupId: "group.studipadawan",
     );
     return await storage.write(key: key, value: value, iOptions: options);
   }
